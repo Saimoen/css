@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
+
+body {
+  background: url(golden-gate.jpg) no-repeat center/cover fixed;
+  height: 100vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color: darkblue;
+  text-shadow: -3px 1px 0 darkcyan;
+  text-align: center;
+  font-family: "Megrim", cursive;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Trispace", sans-serif;
+  color: black;
+}
+
+section,
+.flexbox,
+.grid {
+  border: 2px solid skyblue;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  background: rgba(135, 207, 235, 0.664);
+}
+
+main {
+  background: cadetblue;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px 5px black;
+}
+
+.positioning {
+  border: 2px solid skyblue;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  background: rgba(135, 207, 235, 0.664);
+}
+
+#circle {
+  background: skyblue;
+  height: 60px;
+  width: 60px;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  box-shadow: 0 2px 12px 5px black;
+  z-index: 1;
+}
+
+#rectangle {
+  height: 15px;
+  width: 120px;
+  background: skyblue;
+  padding: 20px;
+  position: absolute;
+  bottom: 25%;
+  left: 7%;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 2px 12px 5px black;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.7rem;
+  height: 160px;
+  width: 160px;
+  background: rgba(0, 0, 255, 0.623);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "bt bt";
+}
+
+input,
+textarea {
+  margin: 5px;
+  height: 45px;
+  border: 1px solid darkcyan;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: "Trispace", cursive;
+}
+
+#firstname {
+  grid-area: i1;
+}
+
+#surname {
+  grid-area: i2;
+}
+
+textarea {
+  grid-area: ta;
+  resize: none;
+}
+input[type="submit"] {
+  grid-area: bt;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: darkcyan;
+  color: white;
+}
+
+/*****Responsive*****/
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    display: block;
+  }
+}

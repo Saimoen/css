@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours</title>
+    <link rel="shortcut icon" href="css-logo.png">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <section>
+        <h1>Textes -- Modifier le texte avec CSS</h1>
+        <p>Le "text-transform" permet de marger le texte,<br>
+        "letter-spacing" permet de mettre des espaces entre les lettres,<br>
+        "font-size" permet de modifier la taille du texte,<br>
+        "color" permet d'agir sur la couleur de la police,<br>
+        "text-shadow" permet de rajouter une ombre au texte,<br>
+        "text-align" permet de placer le texte,<br>
+        "font-family" permet de changer la police du text <br>
+        </p>
+    </section>
+    
+    <main>
+        <h1>Box -- Encadrer un élément avec CSS</h1>
+        <p>Pour faire des box avec CSS, il suffit d'ajouter un "background",<br>
+        "width" permet de modifier la largeur de la box, <br>
+        "margin" permet de placer la box sur la page, <br>
+        "padding" permet de placer le contenu de la box sur la box, <br>
+        "border-radius" permet d'arrondir les coins de la box, <br>
+        "box-shadow" permet d'ajouter de l'ombre a la box. </p>
+    </main>
+    
+    <div class="positioning">
+        <h1>Positionner -- Indiquer des positions avec CSS</h1>
+        <span id="circle">Cercle en CSS</span>
+        <span id="rectangle">Rectangle en CSS</span>
+        <p>Pour positionner en CSS, 
+            "position: relative" = DIVISION <br>
+            "position: absolute" = ID, <br>
+            "top" permet de placer l'ID par rapport au haut<br>
+            "bottom" permet de placer l'ID par rapport au bas <br>
+            "left" permet de placer l'ID par rapport à la gauche, <br>
+            "right" permet de placer l'ID par rapport à la droite. <br>
+            Les valeurs en % sont responsives et correspondent au pourcentage de la division "parent". <br>
+            Les divisions peuvent regroupés plusieurs ID, ce sont les "parents" des ID.
+        </p>
+    </div>
+
+    <div class="grid">
+        <h1>Grid -- Positionner avec "Grid"</h1>
+        <p>Pour positionner avec "display: grid",<br>
+        il faut utiliser la balise "grid-template-column" pour positionner en colonne,
+        les valeurs de la balise correspondent aux contenus de la division <br>
+        "rows" = ligne , "columns" = colonne, <br>
+        "grid-template-areas: 'i1 i2' 'ta ta' 'bt bt'" permet de dessiner la forme du formulaire, <br>
+        pour déclarer les variables il suffit de mettre l'ID (CSS) de la variable, "grid-area: i1" et ainsi de suite.
+
+        </p>
+
+        <div class="grid-container">
+            <img src="css-logo.png" height="200px" alt="css-logo">
+            <form>
+                <input type="text" id="firstname" placeholder="Prénom">
+                <input type="text" id="surname" placeholder="Nom">
+                <textarea cols="30" rows="30" placeholder="Laissez-moi un message"></textarea>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="flexbox">
+        <h1>Flexbox -- Positionner avec "display"</h1>
+        <ul>
+            <li><a href="https://google.com/" target="_blank">Google</a></li>
+            <li><a href="https://facebook.com/">Facebook</a></li>
+            <li><a href="https://instagram.com/">Instagram</a></li>
+        </ul>
+        <p>"list-type-type" permet de supprimer les points pour les listes <br>
+        "font-size" permet de modifier la taille du texte <br>
+        "height" et "width" permettent de modifier la hauteur et la largeur de la box <br>
+        "display: flex" permet de mettre a la ligne les listes, <br>
+        "justify-content: space-around" permet d'espacer les box, <br>
+        "padding=0" permet de supprimer la marge par défaut. <br>
+        "align-items:center" permet de centrer les éléments,<br>
+        si j'oublie certaines balises il suffit de regarder les cheat sheet.
+        </p>
+    </div>
+
+
+
+</body>
+</html>
